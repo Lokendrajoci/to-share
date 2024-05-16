@@ -9,28 +9,30 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    background-image: linear-gradient(to top, #fbc2eb 0%, #a6c1ee 100%);
 }
 
 .toDoLayout {
     background-image: linear-gradient(-225deg, #FF3CAC 0%, #562B7C 52%, #2B86C5 100%);
+    width: 40vw;
     min-height: 50vh;
-    min-width: 40vw;
     border: 3px solid rgba(145, 119, 178, 0);
     border-radius: 3%;
     display: flex;
-    justify-content: center;
-    align-items: center;
     flex-direction: column;
+    align-items: center;
     max-width: 90vw;
-    max-height: 90vw;
-   
+    max-height: 90vh;
+    padding: 20px;
 }
 
-.textClass{
+.textClass {
     display: flex;
-    
-
+    width: 100%;
+    margin-bottom: 20px;
+    justify-content: center;
 }
+
 .poetsen-one-regular {
     font-family: "Poetsen One", sans-serif;
     font-weight: 400;
@@ -39,34 +41,51 @@ body {
 
 .toAdd {
     height: 7vh;
-    width: 20vw;
+    flex: 0.7;
     border: 3px solid rgb(6, 5, 5);
     border-radius: 3px;
     text-align: center;
-  
+    margin-right: 14px;
 }
 
-.tickButoon {
+.tickButton {
     margin-left: 20px;
-    color: rgb(222, 228, 212);
+    color: rgb(154, 212, 61);
     font-size: 30px;
     font-weight: 600;
-
+    cursor: pointer;
+    background: none;
+    border: none;
+    font-size: x-large;
 }
 
-.addText{
-    margin-top: 20px;
-    
-    
-}
 
-.tickButoon:hover{
-    color: #FF3CAC;
-    
+.addText {
+    flex: 1;
+    width: 100%;
+    overflow-y: auto;
 }
-
 
 ul {
     border: none;
     list-style-type: none;
+}
+
+.textClass {
+    display: flex;
+    width: 100%;
+    margin-bottom: 20px;
+    margin-top: 20px;  
+}
+
+.bakchodiNahi{
+    /* background-color: rebeccapurple; */
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0;
+    color: aliceblue;
+    /* width: 20vh; */
+    height: 5vh;
+    /* text-overflow: inherit; */
+    text-wrap: balance;
 }
